@@ -118,6 +118,7 @@ section > h2 > span {
 
 #whoami {
     text-align: justify;
+    margin-left: 30px;
 }
 
 #skills {
@@ -150,3 +151,24 @@ section > h2 > span {
 
 figcaption {text-align: center;
 width: 100%;}
+
+.contact-social-icons {text-align: center;}
+
+.contact-social-icons i {font-size: 2.5em;
+display: inline-block;
+color: white;
+border: 2px solid white;}
+
+#contact {position: relative;
+    padding: 40px;
+    background-color: #213b50;
+    overflow: hidden; }
+
+#contact-data,#contact-form {display: inline-block;}
+
+#contact div {width: 45%;}
+
+#contact-form {float:right;}
+#contact-data {float: left;}
+
+#contact-form form input {width: 100%;}
