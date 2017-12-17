@@ -14,10 +14,17 @@ body {
     color: #fff;
     background-image: url("../img/header-background.jpg");
     background-size: cover;
-    height: 400px;
+    height: 50vh;
     width: 100%;
+    box-sizing: border-box;
 
 }
+
+#main-header-content {display: inline-block;
+position:  absolute;
+width: 100%;
+text-align: center;
+top: 22vh;}
 
 #main-header #main-header-content h1,
 #main-header #main-header-content h2 {
@@ -69,3 +76,6 @@ a:hover {
     text-decoration: none;
     color: #291f1a;
 }
+
+#fotka {width: 25vw;
+margin: 5px;}
