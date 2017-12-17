@@ -101,7 +101,7 @@ a:hover {
     border: solid white 5px;
     border-radius: 4%;
     height: 100%;
-    margin-right: 10px ;
+    margin-right: 10px;
     margin-bottom: 10px;
 }
 
@@ -120,12 +120,33 @@ section > h2 > span {
     text-align: justify;
 }
 
-#skills {display: inline-block;
-width: 100vw;}
+#skills {
+    display: inline-block;
+    padding: 10px;
+    overflow: hidden;
+    text-align: center;
+    height: 50vh;
+}
 
-#skills>p { display: inherit;
-width: 100%;
-text-align: center;
-margin: 10px;}
+#skills > p {
+    position: relative;
+    text-align: center;
+}
 
-#skills>figure {}
+#skill-icons {
+    position: relative;
+    display: inline-block;
+    width: 50%;
+    text-align: center;
+   
+   
+}
+
+#skills > #skill-icons > figure {
+    display: inline-block;
+    width: 20%;
+    margin:auto;
+}
+
+figcaption {text-align: center;
+width: 100%;}
