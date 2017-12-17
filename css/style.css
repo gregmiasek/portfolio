@@ -57,6 +57,7 @@ body {
 #main-nav {
     background-color: white;
     float: right;
+    position: fixed;
     top: 0;
     z-index: 10;
     width: 100%;
@@ -98,22 +99,33 @@ a:hover {
 
 #fotka {
     border: solid white 5px;
+    border-radius: 4%;
     height: 100%;
     margin-right: 10px ;
     margin-bottom: 10px;
 }
 
-#about > h2 {
+section > h2 {
     color: #291f1a;
     text-align: center;
     font-size: 3.5vw;
     font-weight: 300;
 }
 
-#about > h2 > span {
+section > h2 > span {
     color: #1ac056;
 }
 
 #whoami {
     text-align: justify;
 }
+
+#skills {display: inline-block;
+width: 100vw;}
+
+#skills>p { display: inherit;
+width: 100%;
+text-align: center;
+margin: 10px;}
+
+#skills>figure {}
