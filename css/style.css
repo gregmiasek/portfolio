@@ -1,4 +1,6 @@
-* {box-sizing:border-box;}
+* {
+    box-sizing: border-box;
+}
 
 body {
     font-family: 'Lato', sans-serif;
@@ -7,30 +9,63 @@ body {
     margin: 0;
 }
 
-#main-header {font-weight: 300;
-color: black;
-background-image: image()}
+#main-header {
+    font-weight: 300;
+    color: #fff;
+    background-image: url("../img/header-background.jpg");
+    background-size: cover;
+    height: 400px;
+    width: 100%;
 
-#main-nav {display: block;
-    position:fixed;
-    background-color: #fff;
+}
+
+#main-header #main-header-content h1,
+#main-header #main-header-content h2 {
+    display: block;
     font-weight: 300;
     width: 100%;
-    z-index: 10;   
+    margin: 0 auto;
 }
 
-#main-nav ul li{list-style-type: none;
-display: inline-block;
-float: right;
-color: #1ac056;
-font-weight: 300;
-margin: 10px 15px; 
+#main-header #main-header-content h1 {
+    font-size: 3em;
 }
 
-#main-nav ul li:hover {
-color: #291f1a;
+#main-header #main-header-content h1 span {
+    color: #1ac056;
+    font-weight: 700;
+}
+
+
+#main-header #main-header-content h2 {
+    font-family: roboto;
+    font-weight: 400;
+}
+
+#main-nav {
+    background-color: white;
+    float: right;
+    top: 0;
+    z-index: 10;
+    width: 100%;
+}
+
+#main-nav > ul > li {
+    list-style-type: none;
+    display: inline-block;
+    float: right;
+    color: #1ac056;
+    font-weight: 300;
+    margin: 10px 15px;
 
 }
 
-a {text-decoration: none;
-color: #1ac056;}
+a {
+    text-decoration: none;
+    color: #1ac056;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #291f1a;
+}
