@@ -14,17 +14,21 @@ body {
     color: #fff;
     background-image: url("../img/header-background.jpg");
     background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
     height: 50vh;
     width: 100%;
     box-sizing: border-box;
 
 }
 
-#main-header-content {display: inline-block;
-position:  absolute;
-width: 100%;
-text-align: center;
-top: 22vh;}
+#main-header-content {
+    display: inline-block;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    top: 22vh;
+}
 
 #main-header #main-header-content h1,
 #main-header #main-header-content h2 {
@@ -47,6 +51,7 @@ top: 22vh;}
 #main-header #main-header-content h2 {
     font-family: roboto;
     font-weight: 400;
+    margin-top: 1em;
 }
 
 #main-nav {
@@ -67,6 +72,7 @@ top: 22vh;}
 
 }
 
+
 a {
     text-decoration: none;
     color: #1ac056;
@@ -77,5 +83,37 @@ a:hover {
     color: #291f1a;
 }
 
-#fotka {width: 25vw;
-margin: 5px;}
+#about {
+    height: 50vw;
+    padding: 0 80px 100px;
+    background-color: #f9fcfe;
+    overflow: hidden;
+}
+
+#janek {
+    height: 60%;
+    float: left;
+    margin: 0;
+}
+
+#fotka {
+    border: solid white 5px;
+    height: 100%;
+    margin-right: 10px ;
+    margin-bottom: 10px;
+}
+
+#about > h2 {
+    color: #291f1a;
+    text-align: center;
+    font-size: 3.5vw;
+    font-weight: 300;
+}
+
+#about > h2 > span {
+    color: #1ac056;
+}
+
+#whoami {
+    text-align: justify;
+}
