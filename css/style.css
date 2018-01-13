@@ -139,36 +139,118 @@ section > h2 > span {
     display: inline-block;
     width: 50%;
     text-align: center;
+}
+
+#portfolio {
+   margin-left: 70px;
+    margin-right: 70px;
+    text-align: center;
+}
+
+.portfolio-item {
+    width: 33.33%;
+    height: 300px;
+    float: left;
+    background-position: center;
+    background-size: cover;
+    margin: 0;
+}
+
+#portfolio1 {
+    background-image: url(../img/portfolio1.jpg);
+}
+
+#portfolio2 {
+    background-image: url(../img/portfolio2.jpg);
+}
+
+#p-port {
+    color: white;
+    border: 1px solid #fff;
+}
+
+.portfolio-mask {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(33, 59, 80, 0.6);
    
-   
+}
+
+#mask-text>a>i {color: white;}
+
+
+#mask-content {
+    border: 1px solid white;
+    width: 95%;
+    height: 95%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#mask-text {color: white;
+    position: absolute;
+    margin: auto;
+    top: 50%;
+    transform: translateY(-50%);}
+
+#portfolio3 {
+    background-image: url(../img/portfolio3.jpg);
 }
 
 #skills > #skill-icons > figure {
     display: inline-block;
     width: 20%;
-    margin:auto;
+    margin: auto;
 }
 
-figcaption {text-align: center;
-width: 100%;}
+figcaption {
+    text-align: center;
+    width: 100%;
+}
 
-.contact-social-icons {text-align: center;}
+.contact-social-icons {
+    text-align: center;
+}
 
-.contact-social-icons i {font-size: 2.5em;
-display: inline-block;
-color: white;
-border: 2px solid white;}
+.contact-social-icons i {
+    font-size: 2.5em;
+    display: inline-block;
+    color: white;
+    border: 2px solid white;
+}
 
-#contact {position: relative;
+#contact {
+    margin-top: 20px;
+    position: relative;
     padding: 40px;
     background-color: #213b50;
-    overflow: hidden; }
+    overflow: hidden;
+}
 
-#contact-data,#contact-form {display: inline-block;}
+#contact-data,
+#contact-form {
+    display: inline-block;
+}
 
-#contact div {width: 45%;}
+#contact div {
+    width: 45%;
+}
 
-#contact-form {float:right;}
-#contact-data {float: left;}
+#contact-form {
+    float: right;
+}
 
-#contact-form form input {width: 100%;}
+#contact-data {
+    float: left;
+}
+
+#contact-form form input {
+    width: 100%;
+}
+
+i:hover {}
