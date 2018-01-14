@@ -1,3 +1,358 @@
+
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    color: #291f1a;
+    margin: 0;
+}
+
+#main-header {
+    font-weight: 300;
+    color: #fff;
+    background-image: url("../img/header-background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 50vh;
+    width: 100%;
+    box-sizing: border-box;
+
+}
+
+#main-header-content {
+    display: inline-block;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    top: 22vh;
+}
+
+#main-header #main-header-content h1,
+#main-header #main-header-content h2 {
+    display: block;
+    font-weight: 300;
+    width: 100%;
+    margin: 0 auto;
+}
+
+#main-header #main-header-content h1 {
+    font-size: 3em;
+}
+
+#main-header #main-header-content h1 span {
+    color: #1ac056;
+    font-weight: 700;
+}
+
+
+#main-header #main-header-content h2 {
+    font-family: roboto;
+    font-weight: 400;
+    margin-top: 1em;
+}
+
+#main-nav {
+    background-color: white;
+    float: right;
+    position: fixed;
+    top: 0;
+    z-index: 10;
+    width: 100%;
+}
+
+#main-nav > ul > li {
+    list-style-type: none;
+    display: inline-block;
+    float: right;
+    color: #1ac056;
+    font-weight: 300;
+    margin: 10px 15px;
+
+}
+
+
+a {
+    text-decoration: none;
+    color: #1ac056;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #291f1a;
+}
+
+#about {
+    height: 400px;
+    padding: 0 40px 0;
+    background-color: #f9fcfe;
+    overflow: hidden;
+}
+
+#janek {
+    height: 200px;
+    float: left;
+    margin: 0;
+}
+
+#fotka {
+    border: solid white 5px;
+    border-radius: 4%;
+    height: 100%;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+h2 {
+    color: #291f1a;
+    text-align: center;
+    font-size: 3.5vw;
+    font-weight: 300;
+}
+
+span {
+    color: #1ac056;
+}
+
+#whoami {
+    text-align: justify;
+}
+
+#skills {
+    display: inline-block;
+    padding: 40px;
+    overflow: hidden;
+    text-align: center;
+}
+
+#skills > p {
+    position: relative;
+    text-align: center;
+}
+
+#skill-icons {
+    position: relative;
+    display: inline-block;
+    width: 50%;
+    text-align: center;
+}
+
+#portfolio {
+    margin-left: 40px;
+    margin-right: 40px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.portfolio-item {
+    width: 33.33%;
+    height: 300px;
+    float: left;
+    background-position: center;
+    background-size: cover;
+    margin: 0;
+}
+
+#portfolio1 {
+    background-image: url(../img/portfolio1.jpg);
+}
+
+#portfolio2 {
+    background-image: url(../img/portfolio2.jpg);
+}
+
+#p-port {
+    color: white;
+    border: 1px solid #fff;
+}
+
+.portfolio-mask {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(33, 59, 80, 0.6);
+    opacity: 0;
+    transition: opacity 1.5s ease;
+
+}
+
+.portfolio-mask:hover {
+    opacity: 1;
+}
+
+#mask-text > a > i {
+    color: white;
+}
+
+#mask-text > a > i:hover {
+    color: green;
+}
+
+
+.mask-content {
+    border: 1px solid white;
+    width: 95%;
+    height: 95%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#mask-text {
+    color: white;
+    position: absolute;
+    margin: auto;
+    padding: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#portfolio3 {
+    background-image: url(../img/portfolio3.jpg);
+}
+
+#skills > #skill-icons > figure {
+    display: inline-block;
+    width: 70px;
+    height: 80px;
+    margin: 10px;
+}
+
+figcaption {
+    text-align: center;
+    width: 100%;
+}
+
+.clear {
+    clear: both;
+}
+
+.contact-social-icons a i {
+    color: white;
+    font-size: 35px;
+    line-height: 50px;
+}
+
+.contact-social-icons a {
+    float: left;
+    display: inline-block;
+    border: 1px solid white;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    margin-right: 10px;
+}
+
+
+#contact {
+    padding: 40px;
+    background-color: #213b50;
+    color: white;
+    overflow: hidden;
+}
+
+#contact > #contact-data > h2 {
+    color: white;
+    text-align: left;
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+#contact-data,
+#contact-form {
+    display: inline-block;
+    position: relative;
+    top: 0px;
+}
+
+#contact-data address {
+    font-style: normal;
+    margin-bottom: 20px;
+}
+
+#contact-form {
+    float: right;
+    text-align: left;
+    width: 50%;
+}
+
+#contact-data {
+    float: left;
+    width: 50%;
+}
+
+#contact-form form input,
+#contact-form form input:not([type="submit"]) {
+    width: 100%;
+}
+
+#message {
+    width: 100%;
+    height: 120px;
+    resize: vertical;
+}
+
+input,
+textarea {
+    background-color: #375a77;
+    margin-bottom: 20px;
+    width: 100%;
+    border:none;
+}
+
+#contact-form form #submit {
+    width: auto;
+    text-align: center;
+    background-color: #1ac056;
+    float: right;
+    padding: 20px;
+    color: white;
+    text-transform: uppercase;
+    transition: all 1s
+}
+
+#contact-form form #submit:hover {
+    background-color: white;
+    color: #1ac056;
+}
+
+
+footer {
+    color: white;
+    background-color: black;
+    padding-left: 40px;
+    margin: 0;
+}
+
+form > input {
+    margin-bottom: 20px;
+    border: 0;
+    padding: 10px;
+
+}
+
+footer  p {
+    margin: 0;
+    background-color: black;
+    color: white;
+    padding-left: 40px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+
+::placeholder {color: white;
+    opacity: 0.6;}
+}
+    
+@media (max-width: 992px) {
 * {
     box-sizing: border-box;
 }
@@ -86,7 +441,7 @@ a:hover {
 
 #about {
     height: 50vw;
-    padding: 0 80px 100px;
+    padding: 0 40px 0;
     background-color: #f9fcfe;
     overflow: hidden;
 }
@@ -101,32 +456,29 @@ a:hover {
     border: solid white 5px;
     border-radius: 4%;
     height: 100%;
-    margin-right: 10px;
     margin-bottom: 10px;
 }
 
-section > h2 {
+h2 {
     color: #291f1a;
     text-align: center;
     font-size: 3.5vw;
     font-weight: 300;
 }
 
-section > h2 > span {
+span {
     color: #1ac056;
 }
 
 #whoami {
     text-align: justify;
-    margin-left: 30px;
 }
 
 #skills {
     display: inline-block;
-    padding: 10px;
+    padding: 40px;
     overflow: hidden;
     text-align: center;
-    height: 50vh;
 }
 
 #skills > p {
@@ -142,9 +494,10 @@ section > h2 > span {
 }
 
 #portfolio {
-   margin-left: 70px;
-    margin-right: 70px;
+    margin-left: 40px;
+    margin-right: 40px;
     text-align: center;
+    margin-bottom: 40px;
 }
 
 .portfolio-item {
@@ -174,13 +527,25 @@ section > h2 > span {
     width: 100%;
     height: 100%;
     background-color: rgba(33, 59, 80, 0.6);
-   
+    opacity: 0;
+    transition: opacity 1.5s ease;
+
 }
 
-#mask-text>a>i {color: white;}
+.portfolio-mask:hover {
+    opacity: 1;
+}
+
+mask-text > a > i {
+    color: white;
+}
+
+#mask-text > a > i:hover {
+    color: green;
+}
 
 
-#mask-content {
+.mask-content {
     border: 1px solid white;
     width: 95%;
     height: 95%;
@@ -192,11 +557,14 @@ section > h2 > span {
     transform: translateY(-50%);
 }
 
-#mask-text {color: white;
+#mask-text {
+    color: white;
     position: absolute;
     margin: auto;
+    padding: 10px;
     top: 50%;
-    transform: translateY(-50%);}
+    transform: translateY(-50%);
+}
 
 #portfolio3 {
     background-image: url(../img/portfolio3.jpg);
@@ -204,8 +572,9 @@ section > h2 > span {
 
 #skills > #skill-icons > figure {
     display: inline-block;
-    width: 20%;
-    margin: auto;
+    width: 70px;
+    height: 80px;
+    margin: 10px;
 }
 
 figcaption {
@@ -213,44 +582,124 @@ figcaption {
     width: 100%;
 }
 
-.contact-social-icons {
-    text-align: center;
+.clear {
+    clear: both;
 }
 
-.contact-social-icons i {
-    font-size: 2.5em;
-    display: inline-block;
+.contact-social-icons a i {
     color: white;
-    border: 2px solid white;
+    font-size: 35px;
+    line-height: 50px;
 }
+
+.contact-social-icons a {
+    float: left;
+    display: inline-block;
+    border: 1px solid white;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    margin-right: 10px;
+}
+
 
 #contact {
-    margin-top: 20px;
-    position: relative;
     padding: 40px;
     background-color: #213b50;
+    color: white;
     overflow: hidden;
+}
+
+#contact > #contact-data > h2 {
+    color: white;
+    text-align: left;
+    margin: 0;
+    margin-bottom: 10px;
 }
 
 #contact-data,
 #contact-form {
     display: inline-block;
+    position: relative;
+    top: 0px;
 }
 
-#contact div {
-    width: 45%;
+#contact-data address {
+    font-style: normal;
+    margin-bottom: 20px;
 }
 
 #contact-form {
     float: right;
+    text-align: left;
+    width: 50%;
 }
 
 #contact-data {
     float: left;
+    width: 50%;
 }
 
-#contact-form form input {
+#contact-form form input,
+#contact-form form input:not([type="submit"]) {
     width: 100%;
 }
 
-i:hover {}
+#message {
+    width: 100%;
+    height: 120px;
+    resize: vertical;
+}
+
+input,
+textarea {
+    background-color: #375a77;
+    margin-bottom: 20px;
+    width: 100%;
+    border:none;
+}
+
+#contact-form form #submit {
+    width: auto;
+    text-align: center;
+    background-color: #1ac056;
+    float: right;
+    padding: 20px;
+    color: white;
+    text-transform: uppercase;
+    transition: all 1s
+}
+
+#contact-form form #submit:hover {
+    background-color: white;
+    color: #1ac056;
+}
+
+
+footer {
+    color: white;
+    background-color: black;
+    padding-left: 40px;
+    margin: 0;
+}
+
+form > input {
+    margin-bottom: 20px;
+    border: 0;
+    padding: 10px;
+
+}
+
+footer  p {
+    margin: 0;
+    background-color: black;
+    color: white;
+    padding-left: 40px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+
+::placeholder {color: white;
+    opacity: 0.6;}
+}

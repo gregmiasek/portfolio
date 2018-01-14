@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Document</title>
+    <title>GRZEGORZ MIĄSEK - PORTFOLIO</title>
     <link href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i|Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&amp;subset=latin-ext" rel="stylesheet">
     <link rel="stylesheet" href="css/font-awesome.min.css">
     <link rel="stylesheet" href="css/style.css">
@@ -15,7 +15,7 @@
         <ul>
             <li><a href="#about">o mnie</a></li>
             <li><a href="#skills">umiejętności</a></li>
-            <li><a href="#portfolio">o mnie</a></li>
+            <li><a href="#portfolio">portfolio</a></li>
             <li><a href="#contact">kontakt</a></li>
         </ul>
     </nav>
@@ -30,7 +30,7 @@
         <figure id="janek">
             <img id="fotka" src="img/jan-nowak.jpg" alt="Janek">
         </figure>
-        <article id="whoami">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic est, ipsum. Necessitatibus aspernatur ullam, pariatur in, velit error magni delectus ratione placeat, dolore corrupti! Ipsa iste a, possimus doloremque nihil nam eaque recusandae officiis dolor molestias laboriosam quas impedit nisi minima ullam totam error quam eum quidem culpa quibusdam, rem sunt dicta! Optio similique itaque sunt non dolorem, expedita sed architecto aperiam quisquam, molestiae nihil, tempore id voluptatem quae eveniet!</article>
+        <article id="whoami">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic est, ipsum. Necessitatibus aspernatur ullam, pariatur in, velit error magni delectus ratione placeat, dolore corrupti! Ipsa iste a, possimus doloremque nihil nam eaque recusandae officiis dolor molestias laboriosam quas impedit nisi minima ullam totam error quam eum quidem culpa quibusdam, rem sunt dicta! Optio similique itaque sunt non dolorem, expedita sed architecto aperiam quisquam, moarginlestiae nihil, tempore id voluptatem quae eveniet!</article>
     </section>
     <section id="skills">
         <h2>Moje <span>umiejętności</span></h2>
@@ -53,17 +53,15 @@
                 <figcaption>js</figcaption>
             </figure>
         </div>
+        <div class=clear></div>
     </section>
     <section id="portfolio">
         <h2>Moje <span>portfolio</span></h2>
         <div class=portfolio-item id="portfolio1">
-
-        </div>
-        <div class=portfolio-item id="portfolio2">
             <div class="portfolio-mask">
-                <div id="mask-content">
-                   <div id="mask-text">
-                         <h3>OPIS PROJEKTU</h3>
+                <div class="mask-content">
+                    <div id="mask-text">
+                        <h3>OPIS PROJEKTU</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum voluptas quidem nesciunt sequi earum. Reprehenderit iste omnis numquam minima sequi sunt </p>
                         <h4>Technologie</h4>
                         <a href=""><i class="fa fa-link"></i></a>
@@ -71,33 +69,60 @@
                 </div>
             </div>
         </div>
-        <div class=portfolio-item id="portfolio3"></div>
-
+        <div class=portfolio-item id="portfolio2">
+            <div class="portfolio-mask">
+                <div id="mask-content">
+                    <div id="mask-text">
+                        <h3>OPIS PROJEKTU</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum voluptas quidem nesciunt sequi earum. Reprehenderit iste omnis numquam minima sequi sunt </p>
+                        <h4>Technologie</h4>
+                        <a href=""><i class="fa fa-link"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class=portfolio-item id="portfolio3">
+            <div class="portfolio-mask">
+                <div class="mask-content">
+                    <div id="mask-text">
+                        <h3>OPIS PROJEKTU</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum voluptas quidem nesciunt sequi earum. Reprehenderit iste omnis numquam minima sequi sunt </p>
+                        <h4>Technologie</h4>
+                        <a href=""><i class="fa fa-link"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class=clear></div>
     </section>
     <section id="contact">
         <div id="contact-data">
             <h2>Grzegorz <span>Miąsek</span></h2>
-            <address>04-418 Warszawa, ul. Kordiana 64,
+            <address>04-418 Warszawa<br>ul. Kordiana 64
+           <br>
+           <br>
             tel. 505-491-327
-            e-mail: gmiasek@gmail.com</address>
+            <br>
+            <a href="mailto:gmiasek@gmail.com">e-mail: gmiasek@gmail.com</a></address>
             <div class="contact-social-icons">
-                <i class="fa fa-facebook-square" aria-hidden="true"></i>
-                <i class="fa fa-google-plus" aria-hidden="true"></i>
-                <i class="fa fa-twitter-square" aria-hidden="true"></i>
-                <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+                <a href="https://www.facebook.com/">  <i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+                <a href="https://plus.google.com/?hl=pl"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+                <a href=""><i class="fa fa-twitter-square" aria-hidden="true"></i>
+                </a> <a href=""><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
             </div>
         </div>
         <div id="contact-form">
             <form action="" method="post">
-                <label for="name">Imię </label><br>
-                <input type="text" id="name" placeholder="Jan"><br>
-                <label for="email">Email</label> <br>
-                <input type="email" id="email" placeholder="kk@eee"><br>
+                <input type="text" id="name" placeholder="Imię i Nazwisko"><br>
+                <input type="email" id="email" placeholder="e-mail"><br>
                 <textarea name="Wiadomość" id="message"></textarea><br>
-                <input type="submit" value="Wyślij">
+                <input type="submit" value="Wyślij" id="submit">
             </form>
         </div>
     </section>
+    <footer>
+        <p>Copyright &#9400; Grzegorz Miąsek</p>
+    </footer>
 
 </body>
 
